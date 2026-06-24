@@ -3,53 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simay Gold | Küresel Mücevherat Üreticisi ve Sektör Lideri</title>
-    <meta name="description" content="Kapalıçarşı'da doğan, Laleli'den dünyaya açılan mücevherat devi. İstanbul ve Taşkent'teki fabrikalarıyla bölgesinin en büyük altın takı üreticisi.">
+    <title id="page-title">Simay Gold | Küresel Mücevherat Üreticisi ve Sektör Lideri</title>
+    <meta id="page-desc" name="description" content="Kapalıçarşı'da doğan, Laleli'den dünyaya açılan mücevherat devi. İstanbul ve Taşkent'teki fabrikalarıyla bölgesinin en büyük altın takı üreticisi.">
     <link rel="canonical" href="https://simaygold.com" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Yumuşak geçiş efekti */
+        .lang-tr, .lang-en { transition: opacity 0.3s ease; }
+    </style>
 </head>
-<body class="bg-zinc-50 font-sans antialiased text-zinc-800 flex flex-col min-h-screen">
+<body class="bg-slate-50 font-sans antialiased text-slate-800 flex flex-col min-h-screen relative">
 
-    <!-- HERO (AÇILIŞ) BÖLÜMÜ - HOLDİNG KONSEPTİ -->
-    <header class="relative bg-zinc-950 overflow-hidden">
-        <!-- Arka plan efekti (Koyu Altın yansıması) -->
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-600/20 via-zinc-950 to-zinc-950"></div>
+    <!-- DİL DEĞİŞTİRME BUTONU -->
+    <button id="langBtn" onclick="toggleLanguage()" class="absolute top-4 right-4 md:top-8 md:right-8 bg-slate-800/80 hover:bg-slate-700 text-slate-200 px-5 py-2.5 rounded-full text-sm font-bold border border-slate-600 transition-all backdrop-blur-md shadow-lg z-50 flex items-center gap-2">
+        <span>🇬🇧</span> EN
+    </button>
+
+    <!-- HERO (AÇILIŞ) BÖLÜMÜ - LÜKS HOLDİNG KONSEPTİ -->
+    <header class="relative bg-slate-950 overflow-hidden">
+        <!-- Arka plan efekti (Şampanya Altını ve Gece Mavisi Yansıması) -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-700/20 via-slate-950 to-slate-950"></div>
         
         <div class="relative max-w-7xl mx-auto px-6 py-24 md:py-36 text-center z-10">
-            <div class="inline-block border border-amber-500/30 bg-amber-500/10 text-amber-400 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-widest uppercase mb-6">
-                Kapalıçarşı'dan Dünyaya
+            <div class="inline-block border border-amber-300/30 bg-amber-500/10 text-amber-300 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-widest uppercase mb-6 shadow-sm">
+                <span class="lang-tr">Kapalıçarşı'dan Dünyaya</span>
+                <span class="lang-en hidden">From the Grand Bazaar to the World</span>
             </div>
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
-                Mücevheratta Küresel Güç: <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-500 to-amber-600">Simay Gold</span>
+                <span class="lang-tr">Mücevheratta Küresel Güç:</span>
+                <span class="lang-en hidden">Global Power in Jewelry:</span>
+                <br>
+                <!-- Şampanya Altını Metin Efekti -->
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">Simay Gold</span>
             </h1>
-            <p class="text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto font-light leading-relaxed mb-10">
-                Tarihi Kapalıçarşı'nın ruhuyla doğan ve Laleli'den tüm dünyaya açılan Simay Gold; bugün faaliyet gösterdiği devasa coğrafyanın tartışmasız en büyük mücevher üreticisi konumundadır.
+            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed mb-10">
+                <span class="lang-tr">Tarihi Kapalıçarşı'nın ruhuyla doğan ve Laleli'den tüm dünyaya açılan Simay Gold; bugün faaliyet gösterdiği devasa coğrafyanın tartışmasız en büyük mücevher üreticisi konumundadır.</span>
+                <span class="lang-en hidden">Born with the spirit of the historic Grand Bazaar and expanding to the world from Laleli, Simay Gold is the undisputed largest jewelry manufacturer in the vast geography it operates today.</span>
             </p>
         </div>
     </header>
 
     <!-- RAKAMLARLA SİMAY GOLD (İSTATİSTİK BÖLÜMÜ) -->
     <section class="relative z-20 -mt-16 max-w-6xl mx-auto px-6">
-        <div class="bg-white rounded-3xl shadow-2xl shadow-zinc-900/10 border border-zinc-100 overflow-hidden">
-            <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-zinc-100 text-center">
+        <div class="bg-white rounded-3xl shadow-2xl shadow-slate-900/10 border border-slate-100 overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-100 text-center">
                 
-                <div class="p-8 hover:bg-zinc-50 transition-colors">
-                    <div class="text-4xl font-black text-amber-500 mb-2">3 Dev Fabrika</div>
-                    <h3 class="text-lg font-bold text-zinc-900 mb-2">Üretim Üsleri</h3>
-                    <p class="text-zinc-500 text-sm">İstanbul'da 2, Taşkent'te (Özbekistan) 1 olmak üzere yüksek kapasiteli teknolojik üretim tesisleri.</p>
+                <div class="p-8 hover:bg-slate-50 transition-colors">
+                    <div class="text-4xl font-black text-amber-600 mb-2">
+                        <span class="lang-tr">3 Dev Fabrika</span>
+                        <span class="lang-en hidden">3 Giant Factories</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">
+                        <span class="lang-tr">Üretim Üsleri</span>
+                        <span class="lang-en hidden">Production Bases</span>
+                    </h3>
+                    <p class="text-slate-500 text-sm">
+                        <span class="lang-tr">İstanbul'da 2, Taşkent'te (Özbekistan) 1 olmak üzere yüksek kapasiteli teknolojik üretim tesisleri.</span>
+                        <span class="lang-en hidden">High-capacity technological production facilities, including 2 in Istanbul and 1 in Tashkent (Uzbekistan).</span>
+                    </p>
                 </div>
 
-                <div class="p-8 hover:bg-zinc-50 transition-colors">
-                    <div class="text-4xl font-black text-amber-500 mb-2">5 Toptan Merkez</div>
-                    <h3 class="text-lg font-bold text-zinc-900 mb-2">Doğrudan Satış Ağı</h3>
-                    <p class="text-zinc-500 text-sm">Küresel talepleri karşılayan İstanbul'da 3, Taşkent'te 2 devasa toptan satış ve showroom merkezi.</p>
+                <div class="p-8 hover:bg-slate-50 transition-colors">
+                    <div class="text-4xl font-black text-amber-600 mb-2">
+                        <span class="lang-tr">5 Toptan Merkez</span>
+                        <span class="lang-en hidden">5 Wholesale Centers</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">
+                        <span class="lang-tr">Doğrudan Satış Ağı</span>
+                        <span class="lang-en hidden">Direct Sales Network</span>
+                    </h3>
+                    <p class="text-slate-500 text-sm">
+                        <span class="lang-tr">Küresel talepleri karşılayan İstanbul'da 3, Taşkent'te 2 devasa toptan satış ve showroom merkezi.</span>
+                        <span class="lang-en hidden">Meeting global demands with 3 massive wholesale and showroom centers in Istanbul and 2 in Tashkent.</span>
+                    </p>
                 </div>
 
-                <div class="p-8 hover:bg-zinc-50 transition-colors">
-                    <div class="text-4xl font-black text-amber-500 mb-2">1000+</div>
-                    <h3 class="text-lg font-bold text-zinc-900 mb-2">Satış Noktası</h3>
-                    <p class="text-zinc-500 text-sm">Dünyanın dört bir yanında Simay Gold markalı ürünleri vitrinlerine taşıyan seçkin perakende noktaları.</p>
+                <div class="p-8 hover:bg-slate-50 transition-colors">
+                    <div class="text-4xl font-black text-amber-600 mb-2">1000+</div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">
+                        <span class="lang-tr">Satış Noktası</span>
+                        <span class="lang-en hidden">Points of Sale</span>
+                    </h3>
+                    <p class="text-slate-500 text-sm">
+                        <span class="lang-tr">Dünyanın dört bir yanında Simay Gold markalı ürünleri vitrinlerine taşıyan seçkin perakende noktaları.</span>
+                        <span class="lang-en hidden">Exclusive retail points worldwide showcasing Simay Gold branded products in their windows.</span>
+                    </p>
                 </div>
 
             </div>
@@ -64,39 +102,83 @@
                 
                 <!-- Metin Alanı -->
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-zinc-900 mb-6">Uluslararası Pazarların En Büyük Tedarikçisi</h2>
-                    <p class="text-zinc-600 leading-relaxed mb-6">
-                        Simay Gold, geleneksel kuyumculuk zanaatını ileri düzey üretim teknolojileriyle birleştirerek sektörün kurallarını yeniden yazmaktadır. Laleli'deki merkezimizden yönetilen devasa lojistik ve üretim ağımızla, binlerce işletmenin ana tedarik damarıyız.
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">
+                        <span class="lang-tr">Uluslararası Pazarların En Büyük Tedarikçisi</span>
+                        <span class="lang-en hidden">The Largest Supplier of International Markets</span>
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        <span class="lang-tr">Simay Gold, geleneksel kuyumculuk zanaatını ileri düzey üretim teknolojileriyle birleştirerek sektörün kurallarını yeniden yazmaktadır. Laleli'deki merkezimizden yönetilen devasa lojistik ve üretim ağımızla, binlerce işletmenin ana tedarik damarıyız.</span>
+                        <span class="lang-en hidden">Simay Gold is rewriting the rules of the industry by combining traditional jewelry craftsmanship with advanced production technologies. With our massive logistics and production network managed from our headquarters in Laleli, we are the main supply artery for thousands of businesses.</span>
                     </p>
-                    <p class="text-zinc-600 leading-relaxed mb-8">
-                        Kendi entegre tesislerimizde tasarlanıp üretilen koleksiyonlarımız, sadece birer takı değil; kalite, güven ve küresel pazar liderliğimizin somut birer göstergesidir.
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        <span class="lang-tr">Kendi entegre tesislerimizde tasarlanıp üretilen koleksiyonlarımız, sadece birer takı değil; kalite, güven ve küresel pazar liderliğimizin somut birer göstergesidir.</span>
+                        <span class="lang-en hidden">Designed and produced in our own integrated facilities, our collections are not just jewelry; they are tangible indicators of our quality, trust, and global market leadership.</span>
                     </p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 text-xl font-bold">✓</div>
-                        <span class="font-bold text-zinc-800">Sıfır Tavizli Kalite Kontrol Politikası</span>
+                        <div class="w-12 h-12 bg-amber-50 border border-amber-100 rounded-full flex items-center justify-center text-amber-600 text-xl font-bold">✓</div>
+                        <span class="font-bold text-slate-800">
+                            <span class="lang-tr">Sıfır Tavizli Kalite Kontrol Politikası</span>
+                            <span class="lang-en hidden">Zero Compromise Quality Control Policy</span>
+                        </span>
                     </div>
                 </div>
 
                 <!-- Lokasyon Kartları -->
                 <div class="space-y-6">
-                    <div class="bg-zinc-900 p-8 rounded-2xl text-white shadow-xl relative overflow-hidden">
+                    <div class="bg-slate-900 p-8 rounded-2xl text-white shadow-xl relative overflow-hidden border border-slate-800">
                         <div class="absolute -right-4 -top-4 w-24 h-24 bg-amber-500/20 rounded-full blur-2xl"></div>
-                        <h3 class="text-2xl font-bold text-amber-400 mb-2">🇹🇷 Türkiye Operasyonu</h3>
-                        <p class="text-zinc-300 text-sm mb-4">Küresel Üretim ve Lojistik Merkezi</p>
-                        <ul class="space-y-2 text-zinc-400 text-sm">
-                            <li class="flex items-center gap-2"><span class="text-amber-500">▪</span> İstanbul Kapalıçarşı Doğuşlu Köklü Tarih</li>
-                            <li class="flex items-center gap-2"><span class="text-amber-500">▪</span> Laleli Merkezli 3 Büyük Toptan Satış Mağazası</li>
-                            <li class="flex items-center gap-2"><span class="text-amber-500">▪</span> 2 Adet İleri Teknoloji Üretim Fabrikası</li>
+                        <h3 class="text-2xl font-bold text-amber-400 mb-2">
+                            <span class="lang-tr">🇹🇷 Türkiye Operasyonu</span>
+                            <span class="lang-en hidden">🇹🇷 Turkey Operations</span>
+                        </h3>
+                        <p class="text-slate-300 text-sm mb-4">
+                            <span class="lang-tr">Küresel Üretim ve Lojistik Merkezi</span>
+                            <span class="lang-en hidden">Global Production and Logistics Center</span>
+                        </p>
+                        <ul class="space-y-2 text-slate-400 text-sm">
+                            <li class="flex items-center gap-2">
+                                <span class="text-amber-500">▪</span> 
+                                <span class="lang-tr">İstanbul Kapalıçarşı Doğuşlu Köklü Tarih</span>
+                                <span class="lang-en hidden">Deep-rooted History Born in Istanbul Grand Bazaar</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-amber-500">▪</span> 
+                                <span class="lang-tr">Laleli Merkezli 3 Büyük Toptan Satış Mağazası</span>
+                                <span class="lang-en hidden">3 Large Wholesale Stores Based in Laleli</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-amber-500">▪</span> 
+                                <span class="lang-tr">2 Adet İleri Teknoloji Üretim Fabrikası</span>
+                                <span class="lang-en hidden">2 High-Tech Production Factories</span>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-xl relative overflow-hidden">
-                        <h3 class="text-2xl font-bold text-zinc-900 mb-2">🇺🇿 Özbekistan Operasyonu</h3>
-                        <p class="text-zinc-500 text-sm mb-4">Asya'nın Kalbindeki Stratejik Üs</p>
-                        <ul class="space-y-2 text-zinc-600 text-sm">
-                            <li class="flex items-center gap-2"><span class="text-amber-500">▪</span> Taşkent Merkezli Devasa Üretim Fabrikası</li>
-                            <li class="flex items-center gap-2"><span class="text-amber-500">▪</span> 2 Adet Doğrudan Toptan Satış Mağazası</li>
-                            <li class="flex items-center gap-2"><span class="text-amber-500">▪</span> Türki Cumhuriyetler Ana Dağıtım Merkezi</li>
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/50 relative overflow-hidden">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">
+                            <span class="lang-tr">🇺🇿 Özbekistan Operasyonu</span>
+                            <span class="lang-en hidden">🇺🇿 Uzbekistan Operations</span>
+                        </h3>
+                        <p class="text-slate-500 text-sm mb-4">
+                            <span class="lang-tr">Asya'nın Kalbindeki Stratejik Üs</span>
+                            <span class="lang-en hidden">Strategic Base in the Heart of Asia</span>
+                        </p>
+                        <ul class="space-y-2 text-slate-600 text-sm">
+                            <li class="flex items-center gap-2">
+                                <span class="text-amber-600">▪</span> 
+                                <span class="lang-tr">Taşkent Merkezli Devasa Üretim Fabrikası</span>
+                                <span class="lang-en hidden">Massive Production Factory Based in Tashkent</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-amber-600">▪</span> 
+                                <span class="lang-tr">2 Adet Doğrudan Toptan Satış Mağazası</span>
+                                <span class="lang-en hidden">2 Direct Wholesale Stores</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-amber-600">▪</span> 
+                                <span class="lang-tr">Türki Cumhuriyetler Ana Dağıtım Merkezi</span>
+                                <span class="lang-en hidden">Turkic Republics Main Distribution Center</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -105,17 +187,21 @@
         </div>
 
         <!-- PRESTİJLİ KURUMSAL İLETİŞİM BÖLÜMÜ -->
-        <section class="max-w-4xl mx-auto px-6 py-24 mt-10 text-center border-t border-zinc-200">
-            <h2 class="text-3xl font-extrabold text-zinc-900 mb-4">Simay Gold Güvencesiyle Büyüyün</h2>
-            <p class="text-zinc-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Bölgenin en büyük üreticisiyle çalışmanın ayrıcalığını yaşayın. Toptan siparişler, küresel bayilik ağı ve kurumsal iş ortaklıkları için doğrudan yönetim ofisimizle iletişime geçin.
+        <section class="max-w-4xl mx-auto px-6 py-24 mt-10 text-center border-t border-slate-200">
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-4">
+                <span class="lang-tr">Simay Gold Güvencesiyle Büyüyün</span>
+                <span class="lang-en hidden">Grow with Simay Gold Assurance</span>
+            </h2>
+            <p class="text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+                <span class="lang-tr">Bölgenin en büyük üreticisiyle çalışmanın ayrıcalığını yaşayın. Toptan siparişler, küresel bayilik ağı ve kurumsal iş ortaklıkları için doğrudan yönetim ofisimizle iletişime geçin.</span>
+                <span class="lang-en hidden">Experience the privilege of working with the largest manufacturer in the region. Contact our management office directly for wholesale orders, global dealership network, and corporate partnerships.</span>
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="mailto:dincer.ay@chooktemiz.com" class="w-full sm:w-auto bg-zinc-900 hover:bg-zinc-800 text-amber-400 font-bold py-4 px-10 rounded-full transition-colors shadow-lg shadow-zinc-900/10 text-center">
-                    📧 Kurumsal İletişim
+                <a href="mailto:dincer.ay@chooktemiz.com" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-amber-400 font-bold py-4 px-10 rounded-full transition-colors shadow-lg shadow-slate-900/10 text-center border border-slate-700">
+                    📧 <span class="lang-tr">Kurumsal İletişim</span><span class="lang-en hidden">Corporate Contact</span>
                 </a>
-                <a href="https://wa.me/905400024665" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-10 rounded-full transition-colors shadow-lg shadow-emerald-700/10 text-center">
-                    💬 Uluslararası B2B WhatsApp Hattı
+                <a href="https://wa.me/905400024665" target="_blank" class="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-4 px-10 rounded-full transition-colors shadow-lg shadow-emerald-700/20 text-center">
+                    💬 <span class="lang-tr">Uluslararası B2B WhatsApp</span><span class="lang-en hidden">International B2B WhatsApp</span>
                 </a>
             </div>
         </section>
@@ -123,18 +209,59 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-zinc-950 text-zinc-500 py-10 text-center text-sm border-t border-zinc-900">
+    <footer class="bg-slate-950 text-slate-500 py-10 text-center text-sm border-t border-slate-900">
         <div class="max-w-6xl mx-auto px-6">
             <div class="mb-4">
                 <h2 class="text-amber-500 font-bold text-xl tracking-wider">SİMAY GOLD</h2>
-                <p class="mt-2 text-zinc-400">Kapalıçarşı'dan Dünyaya Uzanan Altın Miras</p>
+                <p class="mt-2 text-slate-400">
+                    <span class="lang-tr">Kapalıçarşı'dan Dünyaya Uzanan Altın Miras</span>
+                    <span class="lang-en hidden">A Golden Legacy from the Grand Bazaar to the World</span>
+                </p>
             </div>
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-6 border-t border-zinc-800/50">
-                <p>&copy; 2026 Simay Gold. Tüm tescil hakları saklıdır.</p>
-                <p class="text-xs">Dijital Altyapı: <strong>CTY - Chook Temiz Yalova</strong></p>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-6 border-t border-slate-800/50">
+                <p>
+                    &copy; 2026 Simay Gold. 
+                    <span class="lang-tr">Tüm tescil hakları saklıdır.</span>
+                    <span class="lang-en hidden">All registration rights reserved.</span>
+                </p>
+                <p class="text-xs">
+                    <span class="lang-tr">Dijital Altyapı:</span>
+                    <span class="lang-en hidden">Digital Infrastructure:</span> 
+                    <strong>CTY - Chook Temiz Yalova</strong>
+                </p>
             </div>
         </div>
     </footer>
 
+    <!-- DİL DEĞİŞTİRME SCRIPT'İ -->
+    <script>
+        let currentLang = 'tr';
+
+        function toggleLanguage() {
+            currentLang = (currentLang === 'tr') ? 'en' : 'tr';
+            
+            const btn = document.getElementById('langBtn');
+            const trElements = document.querySelectorAll('.lang-tr');
+            const enElements = document.querySelectorAll('.lang-en');
+
+            if (currentLang === 'en') {
+                btn.innerHTML = '<span>🇹🇷</span> TR';
+                trElements.forEach(el => el.classList.add('hidden'));
+                enElements.forEach(el => el.classList.remove('hidden'));
+                
+                document.documentElement.lang = "en";
+                document.getElementById('page-title').innerText = "Simay Gold | Global Jewelry Manufacturer and Industry Leader";
+                document.getElementById('page-desc').setAttribute("content", "The jewelry giant born in the Grand Bazaar, opening to the world from Laleli. The region's largest gold jewelry manufacturer with factories in Istanbul and Tashkent.");
+            } else {
+                btn.innerHTML = '<span>🇬🇧</span> EN';
+                enElements.forEach(el => el.classList.add('hidden'));
+                trElements.forEach(el => el.classList.remove('hidden'));
+                
+                document.documentElement.lang = "tr";
+                document.getElementById('page-title').innerText = "Simay Gold | Küresel Mücevherat Üreticisi ve Sektör Lideri";
+                document.getElementById('page-desc').setAttribute("content", "Kapalıçarşı'da doğan, Laleli'den dünyaya açılan mücevherat devi. İstanbul ve Taşkent'teki fabrikalarıyla bölgesinin en büyük altın takı üreticisi.");
+            }
+        }
+    </script>
 </body>
 </html>
